@@ -23,10 +23,8 @@ popd
 # Add a feed source
 #echo 'src-git helloworld https://github.com/fw876/helloworld' >>feeds.conf.default
 
-echo 'src-git luci-app-minieap https://github.com/BoringCat/luci-app-minieap.git' >>feeds.conf.default
-
-echo 'src-git minieap https://github.com/BoringCat/minieap-openwrt.git' >>feeds.conf.default
-
+git clone https://github.com/BoringCat/minieap-openwrt.git package/minieap
+git clone https://github.com/BoringCat/luci-app-minieap.git package/luci-app-minieap
 #echo 'src-git passwall https://github.com/xiaorouji/openwrt-passwall' >>feeds.conf.default
 
 
